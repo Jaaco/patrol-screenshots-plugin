@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "patrol-screenshots",
-      "source": ".",
+      "source": "./",
       "description": "Lightweight wrapper around Patrol that parses screenshot bytes from stdout and renders them as PNGs.",
       "version": "0.1.0",
       "author": {
