@@ -5,6 +5,10 @@ Claude Code plugin for capturing screenshots during Patrol Flutter integration t
 ## Installing
 
 ```bash
+/plugin marketplace add Jaaco/patrol-screenshots-plugin
+```
+
+```bash
 /plugin install Jaaco/patrol-screenshots-plugin
 ```
 
