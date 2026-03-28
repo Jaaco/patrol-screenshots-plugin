@@ -1,13 +1,11 @@
+---
+name: patrol-screenshots
+description: Screenshot capture for Patrol Flutter integration tests. Use when writing patrol tests that need screenshots, setting up screenshot capture, or running patrol-screenshot.
+---
+
 # Patrol Screenshots
 
-Screenshot capture for Patrol Flutter integration tests. A lightweight wrapper that parses base64-encoded screenshot bytes from Flutter's stdout and renders them as PNGs.
-
-## Trigger
-
-Use this skill when:
-- Writing or running Patrol integration tests that need screenshots
-- Setting up screenshot capture in a Flutter project
-- Running `patrol-screenshot` or discussing the screenshot protocol
+A lightweight wrapper that parses base64-encoded screenshot bytes from Flutter's stdout and renders them as PNGs.
 
 ## Setup in a New Project
 
