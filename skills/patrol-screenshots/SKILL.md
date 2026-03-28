@@ -7,41 +7,14 @@ description: Screenshot capture for Patrol Flutter integration tests. Use when w
 
 A lightweight wrapper that parses base64-encoded screenshot bytes from Flutter's stdout and renders them as PNGs.
 
-## Setup in a New Project
-
-### Prerequisites
-Add to `pubspec.yaml`:
-```yaml
-dependencies:
-  screenshot: ^3.0.0
-
-dev_dependencies:
-  patrol: ^4.5.0
-```
-
-### Install Dart Helper
-Copy the Dart helper into your project's `integration_test/` directory:
-```bash
-cp ${CLAUDE_SKILL_DIR}/patrol_screenshot.dart integration_test/
-```
-
-### Install CLI
-Symlink the CLI to your PATH:
-```bash
-ln -sf ${CLAUDE_SKILL_DIR}/bin/patrol-screenshot /usr/local/bin/patrol-screenshot
-```
-
-Or run it directly:
-```bash
-${CLAUDE_SKILL_DIR}/bin/patrol-screenshot integration_test/main_test.dart
-```
+For setup and installation details, see [installation.md](installation.md).
 
 ## Dart API
 
 Two functions — that's it:
 
 ```dart
-import 'patrol_screenshot.dart';
+import 'package:patrol_screenshot_helper/patrol_screenshot_helper.dart';
 
 patrolTest('my test', ($) async {
   // Wrap your app once
