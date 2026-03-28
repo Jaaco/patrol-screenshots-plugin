@@ -1,36 +1,29 @@
 # Installation
 
-## Setup in a New Project
+## 1. Add the Dart Package
 
-### Prerequisites
-Add to `pubspec.yaml`:
+Add to your project's `pubspec.yaml` under `dev_dependencies`:
+
 ```yaml
-dependencies:
-  screenshot: ^3.0.0
+dev_dependencies:
   patrol_screenshot_helper:
     git:
       url: https://github.com/Jaaco/patrol_screenshot_helper
       ref: main
-
-dev_dependencies:
-  patrol: ^4.5.0
 ```
 
-### Import and Use
-In your test file, import the helper package:
-```dart
-import 'package:patrol_screenshot_helper/patrol_screenshot_helper.dart';
-```
+Then run:
 
-Then use the exported functions (`screenshotWrapper` and `takeScreenshot`) in your patrol tests.
-
-## CLI
-Symlink the CLI to your PATH (or run directly):
 ```bash
-ln -sf ${CLAUDE_SKILL_DIR}/bin/patrol-screenshot /usr/local/bin/patrol-screenshot
+flutter pub get
 ```
 
-Or run it directly:
+## 2. Install the CLI
+
+Run the install script to add `patrol-screenshot` globally:
+
 ```bash
-${CLAUDE_SKILL_DIR}/bin/patrol-screenshot integration_test/main_test.dart
+curl -fsSL https://raw.githubusercontent.com/Jaaco/patrol_screenshot_helper/main/scripts/install.sh | bash
 ```
+
+This installs `patrol-screenshot` to your PATH so you can run it from any project.
