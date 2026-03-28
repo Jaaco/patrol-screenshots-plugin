@@ -16,7 +16,12 @@
         "name": "Jacob Aschenwald"
       },
       "repository": "https://github.com/Jaaco/patrol-screenshots-plugin",
-      "keywords": ["flutter", "patrol", "screenshots", "integration-testing"],
+      "keywords": [
+        "flutter",
+        "patrol",
+        "screenshots",
+        "integration-testing"
+      ],
       "category": "testing"
     }
   ]
