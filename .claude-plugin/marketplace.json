@@ -1,0 +1,23 @@
+{
+  "name": "patrol-screenshots",
+  "owner": {
+    "name": "Jacob Aschenwald"
+  },
+  "metadata": {
+    "description": "Screenshot capture for Patrol Flutter integration tests"
+  },
+  "plugins": [
+    {
+      "name": "patrol-screenshots",
+      "source": ".",
+      "description": "Lightweight wrapper around Patrol that parses screenshot bytes from stdout and renders them as PNGs.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Jacob Aschenwald"
+      },
+      "repository": "https://github.com/Jaaco/patrol-screenshots-plugin",
+      "keywords": ["flutter", "patrol", "screenshots", "integration-testing"],
+      "category": "testing"
+    }
+  ]
+}
