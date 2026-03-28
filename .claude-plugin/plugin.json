@@ -1,6 +1,6 @@
 {
   "name": "patrol-screenshots",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Screenshot capture for Patrol Flutter integration tests. Lightweight wrapper that parses flutter print statements of screenshot bytes and renders them as PNGs.",
   "author": {
     "name": "Jacob Aschenwald"
