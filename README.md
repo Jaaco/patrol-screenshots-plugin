@@ -9,11 +9,13 @@ Run the following in a Claud code session:
 /plugin marketplace add Jaaco/patrol-screenshots-plugin
 ```
 
+
 Then, run 
 ```bash
 /plugin
 ```
-and search for the `patrol-screenshots` plugin.
+and search for the `patrol-screenshots` plugin, and install it.
+
 
 Finally, run
 ```bash
@@ -23,40 +25,4 @@ to make the skill visible.
 
 ## Usage
 
-### 1. Add dependencies to `pubspec.yaml`
-
-```yaml
-dependencies:
-  screenshot: ^3.0.0
-
-dev_dependencies:
-  patrol: ^4.5.0
-```
-
-### 2. Copy the Dart helper into your project
-
-```bash
-cp ${CLAUDE_SKILL_DIR}/patrol_screenshot.dart integration_test/
-```
-
-### 3. Use in your tests
-
-```dart
-import 'patrol_screenshot.dart';
-
-patrolTest('my test', ($) async {
-  await $.pumpWidgetAndSettle(screenshotWrapper(const MyApp()));
-
-  await takeScreenshot('login_empty');   // → 1-login_empty.png
-  await takeScreenshot('login_filled');  // → 2-login_filled.png
-  await takeScreenshot('dashboard');     // → 3-dashboard.png
-});
-```
-
-### 4. Run
-
-```bash
-patrol-screenshot integration_test/main_test.dart
-```
-
-Screenshots are saved to `test_results/run_N/screenshots/`.
+Adds a skill, such that Claude knows how to run Flutter Patrol tests with screenshots.
