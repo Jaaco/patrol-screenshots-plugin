@@ -4,13 +4,22 @@ Claude Code plugin for capturing screenshots during Patrol Flutter integration t
 
 ## Installing
 
+Run the following in a Claud code session:
 ```bash
 /plugin marketplace add Jaaco/patrol-screenshots-plugin
 ```
 
+Then, run 
 ```bash
-/plugin install Jaaco/patrol-screenshots-plugin
+/plugin
 ```
+and search for the `patrol-screenshots` plugin.
+
+Finally, run
+```bash
+/reload-plugins
+```
+to make the skill visible.
 
 ## Usage
 
